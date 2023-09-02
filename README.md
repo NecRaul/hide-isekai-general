@@ -1,6 +1,6 @@
 # hide-isekai-general
 
-Hide the isekai general on /a/ recognizable by it's OP post containing the word isekai in spoiler.
+Hide the isekai general on /a/ recognizable by its OP post containing the word isekai in spoiler.
 
 ## Requirements
 
