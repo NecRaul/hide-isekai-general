@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         Hide Isekai general on /a/
-// @version      1.0
+// @version      1.1
 // @namespace    Hide Isekai general on /a/
 // @description  Hide the isekai general on /a/ recognizable by it's OP post containing the word isekai in spoiler.
 // @author       NecRaul
 // @license      MIT; https://github.com/NecRaul/hide-isekai-general/blob/main/LICENSE
-// @match        https://boards.4channel.org/a/
+// @match        *://boards.4chan.org/a/
+// @match        *://boards.4channel.org/a/
 // @updateURL    https://github.com/NecRaul/hide-isekai-general/blob/main/script.user.js
 // @downloadURL  https://github.com/NecRaul/hide-isekai-general/blob/main/script.user.js
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=4channel.org
@@ -36,3 +37,4 @@
     false
   );
 })();
+
