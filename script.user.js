@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Hide Isekai general on /a/
-// @version      1.1
+// @version      1.2
 // @namespace    Hide Isekai general on /a/
 // @description  Hide the isekai general on /a/ recognizable by it's OP post containing the word isekai in spoiler.
 // @author       NecRaul
@@ -26,9 +26,12 @@
         const blockquote = thread.querySelector(
           ".catalog-container .catalog-post blockquote.postMessage"
         );
-        // Check if the blockquote element exists and its innerHTML contains "<s>isekai</s>"
-        // Replace this with something else if you want block that
-        if (blockquote && blockquote.innerHTML.includes("<s>isekai</s>")) {
+        // Check if the blockquote element exists and
+        // has a spoiler tag with the word isekai in it.
+        if (
+          blockquote &&
+          blockquote.innerHTML.match(/<s>(.*?)isekai(.*?)<\/s>/i)
+        ) {
           // Apply CSS style to hide the catalog thread
           thread.style.display = "none";
         }
@@ -37,4 +40,3 @@
     false
   );
 })();
-
